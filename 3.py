@@ -9,7 +9,7 @@ def main():
     max_divisor = 1
     while cap != 1:
         for i in range(2, int(cap) + 1):
-            if cap / i == cap // i:
+            if cap % i == 0:
                 cap /= i
                 if i > max_divisor:
                     max_divisor = i
