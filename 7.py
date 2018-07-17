@@ -15,9 +15,9 @@ def main():
         numbers.append(i)
     print(numbers[-1])
 
-def is_composite(x):
-    for i in range(2, int(sqrt(x) + 1)):
-        if x % i == 0:
+def is_composite(n):
+    for i in range(2, int(sqrt(n) + 1)):
+        if n % i == 0:
             return True
     return False
 
