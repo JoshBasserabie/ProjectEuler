@@ -8,10 +8,10 @@ def main():
     answer = 1
     for i in range (1, 21):
         answer = lcm(answer, i)
-    print(int(answer))
+    print(answer)
 
 def lcm(a, b):
-    return a * b / gcd(a, b)
+    return a * b // gcd(a, b)
 
 def gcd(a, b):
     if a > b:
